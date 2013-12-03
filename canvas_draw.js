@@ -12,20 +12,25 @@ function move_lower_triangles(){
 function showVideo(){
   console.log('buttonpressed');
 
-  $(".top-images .one").animate({marginTop : '-=1000px',}, { duration: 600});
-  $(".top-images .two").animate({marginTop : '-=1000px',}, { duration: 900 });
-  $(".top-images .three").animate({marginTop : '-=1000px',}, { duration: 1500 });
-  $(".top-images .four").animate({marginTop : '-=1000px',}, { duration: 2400 });
-  $(".top-images .five").animate({marginTop : '-=1000px',}, { duration: 3600 });
-  $(".top-images .six").animate({marginTop : '-=1000px',}, { duration:  5100 });
+  /*$(".top-images .one").slideUp({
+    duration: 1000,
+    easing: jswing
+  });*/
 
-  $(".bottom-images .one").animate({marginTop : '+=1000px',}, { duration: 1 });
-  $(".bottom-images .two").animate({marginTop : '+=1000px',}, { duration: 9200 });
-  $(".bottom-images .three").animate({marginTop : '+=1000px',}, { duration: 7800 });
-  $(".bottom-images .four").animate({marginTop : '+=1000px',}, { duration: 4200 });
-  $(".bottom-images .five").animate({marginTop : '+=1000px',}, { duration: 2600 });
-  $(".bottom-images .six").animate({marginTop : '+=1000px',}, { duration: 1400 });
-  $(".bottom-images .seven").animate({marginTop : '+=1000px',}, { duration: 800 });
+  $(".top-images .one").animate({top : '-=1000px',}, 600, 'swing');
+  $(".top-images .two").animate({top : '-=1000px',}, 900, 'swing');
+  $(".top-images .three").animate({top : '-=1000px',}, 1500, 'swing');
+  $(".top-images .four").animate({top : '-=1000px',}, 2400, 'swing');
+  $(".top-images .five").animate({top : '-=1000px',}, 3600, 'swing');
+  $(".top-images .six").animate({top : '-=1000px',}, 4500, 'easeOutSine');
+
+  $(".bottom-images .one").animate({top : '+=1000px',}, 5600, 'linear');
+  $(".bottom-images .two").animate({top : '+=1000px',}, 4500, 'linear');
+  $(".bottom-images .three").animate({top : '+=1000px',}, 3600, 'linear');
+  $(".bottom-images .four").animate({top : '+=1000px',}, 2400, 'linear');
+  $(".bottom-images .five").animate({top : '+=1000px',}, 1500, 'linear');
+  $(".bottom-images .six").animate({top : '+=1000px',}, 900, 'linear');
+  $(".bottom-images .seven").animate({top : '+=1000px',}, 600, 'linear');
 
   $('#show-video').hide();
 }
