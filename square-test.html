@@ -5,91 +5,83 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 		html, body { 
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
+			position: relative;
 			margin:0; 
 			padding:0; 
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
 		}
 
-
-		#top-SVG {
-			position: fixed;
-			top:0;
+		.top-images {
+			position: absolute;
+			margin:0; 
+			padding:0; 
+			top: -650px;
 			right: 0;
-			bottom: 0;
 			left: 0;
-			background-color: red;			
+			width: 100%;
+			height: 100%;
 		}
 
-		.svg-graphic {
-			position: fixed;
-			top:0;
+		.top-images img {
+			position: absolute;
+			top: 0;
+			left: 0;
 			right: 0;
-			bottom: 0;
-			left: 0;			
-			z-index: 10;
+			max-width: 100%;
+			min-height: 100%;
 		}
 
-		.svg-graphic.two {
-			top:20px; 
-			z-index: 5;
+		.one {
+			margin-top: 0px;
+			z-index: 90;
 		}
 
-		.svg-graphic.three {
-			top:40px; 
-			z-index: -5;
+		.two {
+			margin-top: 90px;
+			z-index: 80;
 		}
 
-		.svg-graphic.four {
-			top:60px; 
-			z-index: -15;
+		.three  {
+			margin-top: 180px;
+			z-index: 70;
 		}
+
+		.four {
+			margin-top: 270px;
+			z-index: 60;
+		}
+
+		.five {
+			margin-top: 360px;
+			z-index: 50;
+		}
+
+		.six {
+			margin-top: 450px;
+			z-index: 40;
+		}
+
+	
+
 	</style>
 </head>
 
 <body>
 	
+<div class="top-images">
+	<img class="one" src="img/1-top.png">
+	<img class="two" src="img/2-top.png">
+	<img class="three" src="img/3-top.png">
+	<img class="four" src="img/4-top.png">
+	<img class="five" src="img/5-top.png">
+	<img class="six" src="img/6-top.png">
 
-		<svg class="svg-graphic" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100"">
-		  <defs>
-		    <pattern id='image' width="100%" height="140%" viewBox="0 0 100 100" preserveAspectRatio="none">
-      			<image xlink:href='http://25.media.tumblr.com/28c4327f8d41f73e2ed6ccdf7da27efb/tumblr_mw4knrtHlH1qz7p1oo1_500.jpg' width="100" height="100" preserveAspectRatio="none"></image>
-		   </pattern>
-		  </defs>
-		  <polygon points="0, 0, 0, 5, 25, 40, 50, 5, 75, 40, 100, 5, 100, 0,)" fill="url(#image)" />
-		</svg>
+</div>
 
-		<svg class="svg-graphic two" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
-		  <defs>
-		    <pattern id='image' width="100%" height="140%" viewBox="0 0 100 100" preserveAspectRatio="none">
-      			<image xlink:href='http://25.media.tumblr.com/28c4327f8d41f73e2ed6ccdf7da27efb/tumblr_mw4knrtHlH1qz7p1oo1_500.jpg' width="100" height="100" preserveAspectRatio="none"></image>
-		   </pattern>
-		  </defs>
-		  <polygon points="0, 0, 0, 5, 25, 40, 50, 5, 75, 40, 100, 5, 100, 0,)" fill="url(#image)" />
-		</svg>
-
-		<svg class="svg-graphic three" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
-		  <defs>
-		    <pattern id='image' width="100%" height="140%" viewBox="0 0 100 100" preserveAspectRatio="none">
-      			<image xlink:href='http://25.media.tumblr.com/28c4327f8d41f73e2ed6ccdf7da27efb/tumblr_mw4knrtHlH1qz7p1oo1_500.jpg' width="100" height="100" preserveAspectRatio="none"></image>
-		   </pattern>
-		  </defs>
-		  <polygon points="0, 0, 0, 5, 25, 40, 50, 5, 75, 40, 100, 5, 100, 0,)" fill="url(#image)" />
-		</svg>
-		
-		<svg class="svg-graphic four" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100">
-		  <defs>
-		    <pattern id='image' width="100%" height="140%" viewBox="0 0 100 100" preserveAspectRatio="none">
-      			<image xlink:href='http://www.birds.com/wp-content/uploads/home/bird4.jpg' width="100" height="100" preserveAspectRatio="none"></image>
-		   </pattern>
-		  </defs>
-		  <polygon points="0, 0, 0, 5, 25, 40, 50, 5, 75, 40, 100, 5, 100, 0,)" fill="url(#image)" />
-		</svg>
-		
-
+<div class="lower-images">
+</div>
 		
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
