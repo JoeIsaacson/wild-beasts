@@ -2,7 +2,6 @@
 
 <head>
 	<title>TRIANGLES</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<style type="text/css">
 		html, body { 
 			position: relative;
@@ -17,7 +16,7 @@
 			position: absolute;
 			margin:0; 
 			padding:0; 
-			top: -650px;
+			top: -450px;
 			right: 0;
 			left: 0;
 			width: 100%;
@@ -35,8 +34,7 @@
 			height: 100%;
 		}
 
-		.top-images img,
-		.bottom-images img {
+		.top-images img {
 			position: absolute;
 			top: 0;
 			left: 0;
@@ -46,13 +44,14 @@
 		}
 
 		.top-images.one {
-			margin-top: 0px;
+			margin-top: 20px;
 			z-index: 90;
+			background-color: red;
 		}
 
 		.top-images.two {
-			margin-top: 90px;
-			z-index: 80;
+			top: 50px;
+			z-index: 100;
 		}
 
 		.top-images.three  {
@@ -73,6 +72,8 @@
 		.top-images.six {
 			margin-top: 450px;
 			z-index: 40;
+					background-color: red;
+
 		}
 
 		.bottom-images.one {
@@ -104,18 +105,18 @@
 <div class="top-images">
 	<img class="one" src="img/1-top.png">
 	<img class="two" src="img/2-top.png">
-	<img class="three" src="img/3-top.png">
+	<!--<img class="three" src="img/3-top.png">
 	<img class="four" src="img/4-top.png">
 	<img class="five" src="img/5-top.png">
-	<img class="six" src="img/6-top.png">
+	<img class="six" src="img/6-top.png">-->
 </div>
 
-<div class="bottom-images">
+<!--<div class="bottom-images">
 	<img class="one" src="img/1-bottom.png">
 	<img class="two" src="img/2-bottom.png">
 	<img class="three" src="img/4-bottom.png">
 	<img class="four" src="img/4-bottom.png">
-</div>
+</div>-->
 
 <div class="lower-images">
 </div>
