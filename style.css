@@ -1,0 +1,216 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: yellow;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: url(http://www.sockformation.com/wp-content/uploads/2010/09/wild-beasts.jpg) center center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+#upper-triangles {
+    position: relative;
+    margin-top: -550px;
+}
+
+#lower-triangles {
+    position: relative;
+    margin-top: -315px;
+}
+
+#show-video {
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: 700px;
+    z-index: 10000;
+    left:50%;
+    margin-left:-100px;
+    background-color: black;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/*.upper-poly {
+    margin-top: -350px;
+    position: relative;
+    min-height: 450px;
+    width: 100%;
+    background-color: red;
+    -webkit-clip-path: polygon(0 0, 0 30%, 25% 100%, 50% 30%, 75% 100%, 100% 30%, 100% 0);
+}*/
+
+.upper-poly {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    padding-bottom: 60%;
+    -webkit-clip-path: polygon(0 0, 0 30%, 25% 100%, 50% 30%, 75% 100%, 100% 30%, 100% 0);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.upper-poly.one {
+    background: url(http://25.media.tumblr.com/fe6e34ef00254f2bd05451f525b02324/tumblr_mw8osqc77F1qdrz3yo3_500.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 30;
+    top: 0;
+}
+
+.upper-poly.two {
+    top: 60px;
+    background: url(http://31.media.tumblr.com/025b106b8eb47604aa672268c8678118/tumblr_mw8osqc77F1qdrz3yo4_500.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 20;
+}
+
+.upper-poly.three {
+    top: 120px;
+    background: url(http://24.media.tumblr.com/af3c226383948788be1fb371ddb6c2e5/tumblr_mtgzdtVmKU1qa78cio1_500.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 0;
+}
+
+.upper-poly.four {
+    top: 180px;
+    background: url(http://nrs.wsu.edu/Research/Bear-Center/images/mama_bear_with_cubsx.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -10;
+}
+.upper-poly.five {
+    top: 240px;
+    background: url(http://upload.wikimedia.org/wikipedia/commons/9/99/Tokyo_odaiba.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -20;
+}
+
+/*LOWER TRIANGLES*/
+
+/*.lower-poly {
+    margin-top: -260px;
+    position: relative;
+    height: 350px;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 75% 85%, 50% 0, 25% 85%);
+}*/
+
+.lower-poly {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    left: 0;
+    right: 0;
+    padding-top: 60%;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 75% 70%, 50% 0, 25% 70%);
+}
+
+
+.lower-poly.seven {
+    top: 410px;
+    background: url(http://31.media.tumblr.com/eb3ad43db2aabd2d61f5f74b20d3268e/tumblr_mqh5fvjJil1qdrz3yo1_500.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -45;
+}
+
+.lower-poly.eight {
+    top: 470px;
+    background: url(http://25.media.tumblr.com/c6f6b177be993a1272bff730daf34c65/tumblr_mp0djjtkxz1s2rrw7o2_500.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -35;
+}
+
+.lower-poly.nine {
+    top: 530px;
+    background: url(http://24.media.tumblr.com/a22c40c08c0a43a894daedbf55965bfe/tumblr_mp0djjtkxz1s2rrw7o3_500.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -25;
+    background-position:center bottom;
+
+}
+
+.lower-poly.ten {
+    top: 590px;
+    z-index: 10;
+    background: url(http://www.wallsave.com/wallpapers/1920x1200/womans-bare-feet/656647/womans-bare-feet-christians-flung-to-the-wild-beasts-image-x-pixels-656647.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -15;
+}
+
+.lower-poly.eleven {
+    top: 650px;
+    background: url(http://sensesofcinema.com/wp-content/uploads/2012/07/beasts2.jpg) no-repeat center bottom fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 5;
+}
+
+.lower-poly.twelve {
+    top: 710px;
+    background: url(http://www.bbc.co.uk/blogs/acrosstheline/assets_c/2011/12/Wild-Beasts-Pic-thumb-4326x2912-87382.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: 15;
+}
+
+
+/*#music-video {
+    position: absolute;
+    top: 0;
+    right: 0; 
+    left: 0;
+    min-width: 100%;
+    height: 660px;
+    background: url(http://www.sockformation.com/wp-content/uploads/2010/09/wild-beasts.jpg) repeat;
+    background-size: cover;
+    z-index: -100;
+    margin-top: 250px;
+}*/
+
+
+
+/*<!-- For firefox -->
+<svg class="svg-graphic" width="250" height="36" viewBox="0 0 250 36" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" version="1.1">
+    <clipPath id="mask">
+        <polygon points="0, 0, 250, 0, 235, 18, 248, 35, 1, 35, 15, 18" />
+    </clipPath>
+</svg>*/
