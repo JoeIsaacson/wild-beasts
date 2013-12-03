@@ -2,6 +2,8 @@
 
 <head>
 	<title>TRIANGLES</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<style type="text/css">
 		html, body { 
 			position: relative;
@@ -50,7 +52,7 @@
 		}
 
 		.top-images .two {
-			top: 50px;
+			margin-top: 120px;
 			z-index: 80;
 		}
 
@@ -72,7 +74,6 @@
 		.top-images .six {
 			margin-top: 450px;
 			z-index: 40;
-
 		}
 
 		.bottom-images .one {
@@ -82,17 +83,32 @@
 
 		.bottom-images .two {
 			margin-top: 90px;
-			z-index: -110;
+			z-index: -90;
 		}
 		
 		.bottom-images .three {
 			margin-top: 180px;
-			z-index: -120;
+			z-index: -80;
 		}
 		
 		.bottom-images .four {
 			margin-top: 270px;
-			z-index: -130;
+			z-index: -70;
+		}
+
+		.bottom-images .five {
+			margin-top: 360px;
+			z-index: -60;
+		}
+
+		.bottom-images .six {
+			margin-top: 450px;
+			z-index: -50;
+		}
+
+		.bottom-images .seven {
+			margin-top: 540px;
+			z-index: -40;
 		}
 	
 
@@ -101,28 +117,32 @@
 
 <body>
 	
-<div class="top-images">
-	<img class="one" src="img/1-top.png">
-	<img class="two" src="img/2-top.png">
-	<img class="three" src="img/3-top.png">
-	<img class="four" src="img/4-top.png">
-	<img class="five" src="img/5-top.png">
-	<img class="six" src="img/6-top.png">
-</div>
+<div onclick="showVideo()" id="show-video">SHOW VIDEO</div>
 
-<div class="bottom-images">
-	<img class="one" src="img/1-bottom.png">
-	<img class="two" src="img/2-bottom.png">
-	<!--<img class="three" src="img/4-bottom.png">
-	<img class="four" src="img/4-bottom.png">-->
-</div>
+	<div class="top-images">
+		<img class="one" src="img/1-top.png">
+		<img class="two" src="img/2-top.png">
+		<img class="three" src="img/3-top.png">
+		<img class="four" src="img/4-top.png">
+		<img class="five" src="img/5-top.png">
+		<img class="six" src="img/6-top.png">
+	</div>
 
-<div class="lower-images">
-</div>
+	<div class="bottom-images">
+		<img class="one" src="img/1-bottom.png">
+		<img class="two" src="img/2-bottom.png">
+		<img class="three" src="img/3-bottom.png">
+		<img class="four" src="img/4-bottom.png">
+		<img class="five" src="img/5-bottom.png">
+		<img class="six" src="img/6-bottom.png">
+		<img class="seven" src="img/7-bottom.png">
+
+	</div>
 		
 
 	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script type="text/javascript" src="canvas_draw.js"></script>
+
 </body>
 
 

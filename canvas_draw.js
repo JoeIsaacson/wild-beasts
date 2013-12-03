@@ -11,12 +11,25 @@ function move_lower_triangles(){
 
 function showVideo(){
   console.log('buttonpressed');
-  $('.upper-poly').animate({
-    marginTop : '-=1000px',
-  }, { duration: 8000, queue: false });
-  $('.lower-poly').animate({
-    top : '+=1000px',
-  }, { duration: 8000, queue: false });
+
+  $(".top-images .one").animate({marginTop : '-=1000px',}, { duration: 800 });
+  $(".top-images .two").animate({marginTop : '-=1000px',}, { duration: 1400 });
+  $(".top-images .three").animate({marginTop : '-=1000px',}, { duration: 2600 });
+  $(".top-images .four").animate({marginTop : '-=1000px',}, { duration: 4200 });
+  $(".top-images .five").animate({marginTop : '-=1000px',}, { duration: 7800 });
+  $(".top-images .six").animate({marginTop : '-=1000px',}, { duration: 9200 });
+
+
+  $(".bottom-images .one").animate({marginTop : '+=1000px',}, { duration: 1200 });
+  $(".bottom-images .two").animate({marginTop : '+=1000px',}, { duration: 9200 });
+  $(".bottom-images .three").animate({marginTop : '+=1000px',}, { duration: 7800 });
+  $(".bottom-images .four").animate({marginTop : '+=1000px',}, { duration: 4200 });
+  $(".bottom-images .five").animate({marginTop : '+=1000px',}, { duration: 2600 });
+  $(".bottom-images .six").animate({marginTop : '+=1000px',}, { duration: 1400 });
+  $(".bottom-images .seven").animate({marginTop : '+=1000px',}, { duration: 800 });
+
+
+
   $('#show-video').hide();
 }
 
