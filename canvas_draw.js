@@ -29,18 +29,18 @@ $(window).on('scroll', function(){
 function showVideo(){
   console.log('buttonpressed');
 
-  $(".upper-poly.one").animate({top : '-=1000px',}, { duration: 600});
-  $(".upper-poly.two").animate({top : '-=1000px',}, { duration: 900 });
-  $(".upper-poly.three").animate({top : '-=1000px',}, { duration: 1500 });
-  $(".upper-poly.four").animate({top : '-=1000px',}, { duration: 2400 });
-  $(".upper-poly.five").animate({top : '-=1000px',}, { duration: 3600 });
+  $(".upper-poly.one").animate({top : '-=1000px',}, 600, 'easeInBack');
+  $(".upper-poly.two").animate({top : '-=1000px',}, 900, 'easeInBack');
+  $(".upper-poly.three").animate({top : '-=1000px',}, 1500, 'easeInBack');
+  $(".upper-poly.four").animate({top : '-=1000px',}, 2400, 'easeInBack');
+  $(".upper-poly.five").animate({top : '-=1000px',}, 3600, 'easeInBack');
 
-  $(".lower-poly.seven").animate({top : '+=1000px',}, { duration: 3600 });
-  $(".lower-poly.eight").animate({top : '+=1000px',}, { duration: 2400 });
-  $(".lower-poly.nine").animate({top : '+=1000px',}, { duration: 1500 });
-  $(".lower-poly.ten").animate({top : '+=1000px',}, { duration: 900 });
-  $(".lower-poly.eleven").animate({top : '+=1000px',}, { duration: 600 });
-  $(".lower-poly.twelve").animate({top : '+=1000px',}, { duration: 300 });
+  $(".lower-poly.seven").animate({top : '+=1000px',}, 3600, 'easeInBack');
+  $(".lower-poly.eight").animate({top : '+=1000px',}, 2400, 'easeInBack');
+  $(".lower-poly.nine").animate({top : '+=1000px',}, 1500, 'easeInBack');
+  $(".lower-poly.ten").animate({top : '+=1000px',}, 900, 'easeInBack');
+  $(".lower-poly.eleven").animate({top : '+=1000px',}, 600, 'easeInBack');
+  $(".lower-poly.twelve").animate({top : '+=1000px',}, 300, 'easeInBack');
 
   $('#show-video').hide();
 }
