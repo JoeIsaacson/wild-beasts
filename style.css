@@ -1,4 +1,4 @@
-/*body {
+body {
     padding: 0;
     margin: 0;
     background-color: aqua;
@@ -42,7 +42,7 @@
     width: 100%;
     background-color: red;
     -webkit-clip-path: polygon(0 0, 0 30%, 25% 100%, 50% 30%, 75% 100%, 100% 30%, 100% 0);
-}
+}*/
 
 .upper-poly {
     position: absolute;
