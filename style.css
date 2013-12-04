@@ -18,7 +18,70 @@ div.pre-load-2 {
     left: 0;
     right: 50%;
     bottom: 50%;
-    background: url("img/p-1.png") no-repeat scroll right bottom/cover transparent;
+}
+
+.quad-1 .one,
+.quad-1 .two,
+.quad-1 .three,
+.quad-1 .four {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.quad-1 .one {
+    background: url("img/p-1.png") no-repeat scroll right bottom/cover transparent; 
+    z-index: 10;   
+}
+
+.quad-1 .two {
+    background: url("img/p-2.png") no-repeat scroll right bottom/cover transparent; 
+    z-index: 9;   
+}
+
+.quad-1 .three {
+    background: url("img/p-3.png") no-repeat scroll right bottom/cover transparent; 
+    z-index: 8;   
+}
+
+.quad-1 .four {
+    background: url("img/p-4.png") no-repeat scroll right bottom/cover transparent; 
+    z-index: 7;   
+}
+
+/*QUAD 2*/
+
+.quad-1 .one,
+.quad-1 .two,
+.quad-1 .three,
+.quad-1 .four {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.quad-2 .one {
+    background: url("img/p-1.png") no-repeat scroll left bottom/cover transparent; 
+    z-index: 10;   
+}
+
+.quad-2 .two {
+    background: url("img/p-2.png") no-repeat scroll left bottom/cover transparent; 
+    z-index: 9;   
+}
+
+.quad-2 .three {
+    background: url("img/p-3.png") no-repeat scroll left bottom/cover transparent; 
+    z-index: 8;   
+}
+
+.quad-2 .four {
+    background: url("img/p-4.png") no-repeat scroll left bottom/cover transparent; 
+    z-index: 7;   
 }
 
 .quad-2 {
@@ -26,8 +89,6 @@ div.pre-load-2 {
     right: 0;
     left: 50%;
     bottom: 50%;
-    text-align: center;
-    background: url("img/f-2.png") no-repeat scroll left top/cover transparent;
 }
 
 .quad-3 {
