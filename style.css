@@ -1,3 +1,50 @@
+.quad-1,
+.quad-2,
+.quad-3,
+.quad-4 {
+    position: absolute;
+}
+
+.quad-1 {
+    background-color: red;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+    background: url("img/f-1.png") no-repeat scroll right bottom/cover transparent;
+}
+
+.quad-2 {
+    background-color: yellow;
+    top: 0;
+    right: 0;
+    left: 50%;
+    bottom: 50%;
+    background: url("img/f-2.png") no-repeat scroll left bottom/cover transparent;
+}
+
+
+.quad-3 {
+    background-color: green;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    top: 50%;
+    background: url("img/f-3.png") no-repeat scroll left top/cover transparent;
+}
+
+.quad-4 {
+    background-color: purple;
+    bottom: 0;
+    left: 0;
+    right: 50%;
+    top: 50%;
+    background: url("img/f-4.png") no-repeat scroll right top/cover transparent;
+}
+
+
+
+
 #show-video {
     width: 200px;
     position: absolute;

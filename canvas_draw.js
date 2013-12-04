@@ -4,20 +4,19 @@ $(window).on('scroll', function(){
 
 
 function move_lower_triangles(){
-  console.log('hey', window.scrollY)
   var scrollPosition = window.scrollY;
-  console.log('variable defined')
 }
 
-function showVideo(){
+$(document).scroll(function(){
+      var scrollY = $(window).scrollTop();
+      console.log('scroll height =', scrollY);
+      $(".top-images .one").css('top', 'scrollY * 100');
+      console.log('function ran bro');
+});
+
+/*function showVideo(){
   console.log('buttonpressed');
-
-  /*$(".top-images .one").slideUp({
-    duration: 1000,
-    easing: jswing
-  });*/
-
-  $(".top-images .one").animate({top : '-=1000px',}, 900, 'easeInBack');
+  $(".top-images .one").animate({top : '-=1000',}, 900, 'easeInBack');
   $(".top-images .two").animate({top : '-=1000px',}, 1000, 'easeInBack');
   $(".top-images .three").animate({top : '-=1000px',}, 1100, 'easeInBack');
   $(".top-images .four").animate({top : '-=1000px',}, 1200, 'easeInBack');
@@ -33,7 +32,7 @@ function showVideo(){
   $(".bottom-images .seven").animate({top : '+=1000px',}, 900, 'easeInBack');
   $(".bottom-images .eight").animate({top : '+=1000px',}, 800, 'easeInBack');
 
-
+  //HIDE BUTTON AFTER FUNCTION
   $('#show-video').hide();
-}
+}*/
 
