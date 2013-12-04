@@ -5,24 +5,30 @@
     position: absolute;
 }
 
+div.pre-load-1 {
+    background-image: url('img/p-3.png') no-repeat;
+}
+
+div.pre-load-2 {
+    background-image: url('img/p-4.png') no-repeat;
+}
+
 .quad-1 {
-    background-color: red;
     top: 0;
     left: 0;
     right: 50%;
     bottom: 50%;
-    background: url("img/f-1.png") no-repeat scroll right bottom/cover transparent;
+    background: url("img/p-1.png") no-repeat scroll right bottom/cover transparent;
 }
 
 .quad-2 {
-    background-color: yellow;
     top: 0;
     right: 0;
     left: 50%;
     bottom: 50%;
-    background: url("img/f-2.png") no-repeat scroll left bottom/cover transparent;
+    text-align: center;
+    background: url("img/f-2.png") no-repeat scroll left top/cover transparent;
 }
-
 
 .quad-3 {
     background-color: green;
@@ -41,8 +47,6 @@
     top: 50%;
     background: url("img/f-4.png") no-repeat scroll right top/cover transparent;
 }
-
-
 
 
 #show-video {
