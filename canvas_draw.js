@@ -1,29 +1,19 @@
-$(document).ready(function(){
-
-});
-
 
 $(window).bind("load", function() {
-    //setTimeout(function() { screen()}, 3000);
-    setTimeout(function() { play()}, 5000);
-    setTimeout(function() { hide()}, 7800);
+    play();
+    //setTimeout(function() { hide()}, 2000);
 });
       
-      /*function screen(){
-          console.log('screen and text hidden');
-      }*/
 
 
       function play(){
-          var speed = 50;
+          var speed = 45;
           console.log('first local var recorded')
 
           $('.screen').css('z-index', '-100');
           $('.intro-text').css('z-index', '-50');
 
           console.log("screen pushed down")
-
-          $(".quad-1, .quad-2, .quad-3, .quad-4").css('display', 'block');
 
           $(".quad-1 *, .quad-2 *, .quad-3 *, .quad-4 *").hide(0);
           console.log("quads hidden")
@@ -48,15 +38,26 @@ $(window).bind("load", function() {
           $(".quad-1 .two").delay(speed*15).show(0);
           $(".quad-1 .one").delay(speed*16).show(0);
 
-          $("#musicVideo").delay(speed*16).show(0);
-          console.log("video shown")
+          $("#musicVideo").delay(speed*16).fadeIn(500);
+          $(".quad-1, .quad-2, .quad-3, .quad-4").delay(speed*14).fadeOut(10);
+          $(".screen").delay(speed*14).fadeOut(10);
+          $(".intro-text").delay(speed*14).fadeOut(10);
+
+
+
 
       };
 
 
       function hide(){
-          var speed = 50;
+          var speed = 35;
           console.log('second local var recorded')
+
+
+
+          $("#musicVideo").delay(speed*16).show(0);
+          console.log("video shown")
+
 
           $(".quad-1 .one").delay(speed*1).hide(0);
           $(".quad-1 .two").delay(speed*2).hide(0);
