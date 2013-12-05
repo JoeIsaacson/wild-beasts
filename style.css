@@ -1,5 +1,4 @@
 body {
-    background-color: #7659b9;
 }
 
 .intro-text {
@@ -36,13 +35,8 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('img/screen.jpg') no-repeat no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: black;
     z-index: 3000;
-    /*transition: background 2s linear;*/
 }
 
 .quad-1,
@@ -50,7 +44,6 @@ body {
 .quad-3,
 .quad-4 {
     position: absolute;
-    display: none;
 }
 
 
