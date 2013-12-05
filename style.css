@@ -1,3 +1,46 @@
+body {
+    background-color: #eb516d;
+}
+
+.intro-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 343px;
+    width: 300px;
+    margin-top: -171.5px;
+    margin-left: -150px;
+    color: #feee44;
+    text-align: center;
+    font-family: 'helvetica';
+    font-size: 180%;
+    z-index: 3200;
+}
+
+.intro-text h1 {
+    line-height: 1.1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.intro-text div {
+    background-color: #feee44;
+    display: block;
+    height: 10px;
+}
+
+.screen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eb516d;
+    z-index: 3000;
+}
+
 .quad-1,
 .quad-2,
 .quad-3,
@@ -5,13 +48,9 @@
     position: absolute;
 }
 
-div.pre-load-1 {
-    background-image: url('img/p-3.png') no-repeat;
-}
 
-div.pre-load-2 {
-    background-image: url('img/p-4.png') no-repeat;
-}
+/*QUAD 1*/
+
 
 .quad-1 {
     top: 0;
@@ -33,22 +72,22 @@ div.pre-load-2 {
 
 .quad-1 .one {
     background: url("img/p-1.png") no-repeat scroll right bottom/cover transparent; 
-    z-index: 10;   
+    z-index: 550;   
 }
 
 .quad-1 .two {
     background: url("img/p-2.png") no-repeat scroll right bottom/cover transparent; 
-    z-index: 9;   
+    z-index: 549;   
 }
 
 .quad-1 .three {
     background: url("img/p-3.png") no-repeat scroll right bottom/cover transparent; 
-    z-index: 8;   
+    z-index: 548;   
 }
 
 .quad-1 .four {
     background: url("img/p-4.png") no-repeat scroll right bottom/cover transparent; 
-    z-index: 7;   
+    z-index: 547;   
 }
 
 
@@ -74,28 +113,27 @@ div.pre-load-2 {
 
 .quad-2 .one {
     background: url("img/p-5.png") no-repeat scroll left bottom/cover transparent; 
-    z-index: 10;   
+    z-index: 550;   
 }
 
 .quad-2 .two {
     background: url("img/p-6.png") no-repeat scroll left bottom/cover transparent; 
-    z-index: 9;   
+    z-index: 549;   
 }
 
 .quad-2 .three {
     background: url("img/p-7.png") no-repeat scroll left bottom/cover transparent; 
-    z-index: 8;   
+    z-index: 548;   
 }
 
 .quad-2 .four {
     background: url("img/p-8.png") no-repeat scroll left bottom/cover transparent; 
-    z-index: 7;   
+    z-index: 547;   
 }
 
 /*QUAD 3*/
 
 .quad-3 {
-    background-color: green;
     bottom: 0;
     right: 0;
     left: 50%;
@@ -115,28 +153,27 @@ div.pre-load-2 {
 
 .quad-3 .one {
     background: url("img/p-9.png") no-repeat scroll left top/cover transparent; 
-    z-index: 10;   
+    z-index: 550;   
 }
 
 .quad-3 .two {
     background: url("img/p-10.png") no-repeat scroll left top/cover transparent; 
-    z-index: 9;   
+    z-index: 549;   
 }
 
 .quad-3 .three {
     background: url("img/p-11.png") no-repeat scroll left top/cover transparent; 
-    z-index: 8;   
+    z-index: 548;   
 }
 
 .quad-3 .four {
     background: url("img/p-12.png") no-repeat scroll left top/cover transparent; 
-    z-index: 7;   
+    z-index: 547;   
 }
 
-/*QUAD 3*/
+/*QUAD 4*/
 
 .quad-4 {
-    background-color: purple;
     bottom: 0;
     left: 0;
     right: 50%;
@@ -156,28 +193,35 @@ div.pre-load-2 {
 
 .quad-4 .one {
     background: url("img/p-13.png") no-repeat scroll right top/cover transparent; 
-    z-index: 10;   
+    z-index: 550;   
 }
 
 .quad-4 .two {
     background: url("img/p-14.png") no-repeat scroll right top/cover transparent; 
-    z-index: 9;   
+    z-index: 549;   
 }
 
 .quad-4 .three {
     background: url("img/p-15.png") no-repeat scroll right top/cover transparent; 
-    z-index: 8;   
+    z-index: 548;   
 }
 
 .quad-4 .four {
     background: url("img/p-16.png") no-repeat scroll right top/cover transparent; 
-    z-index: 7;   
+    z-index: 547;   
 }
 
 #musicVideo {
-    position: fixed; right: 0; bottom: 0;
-    min-width: 100%; min-height: 100%;
-    width: auto; height: auto; z-index: -100;
-    background: url(polina.jpg) no-repeat;
+    display: none;
+    position: fixed; 
+    top: 0px;
+    right: 0px; 
+    bottom: 0px;
+    left: 0px;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: 0;
     background-size: cover;
 }
