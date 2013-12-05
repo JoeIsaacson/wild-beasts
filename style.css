@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color: #7659b9;
 }
 
 .intro-text {
@@ -8,7 +8,7 @@ body {
     left: 30%;
     height: 343px;
     width: 40%;
-    margin-top: -172.5px;
+    margin-top: -177.5px;
     color: #feee44;
     text-align: center;
     font-family: 'helvetica';
@@ -21,7 +21,7 @@ body {
     padding-top: 20px;
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 10vmin;
+    font-size: 60px;
 }
 
 .intro-text div {
@@ -36,13 +36,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: purple;
-    z-index: 3000;
-    background: url('img/screen.jpg') no-repeat center center;
+    background: url('img/screen.jpg') no-repeat no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    z-index: 3000;
+    /*transition: background 2s linear;*/
 }
 
 .quad-1,
@@ -76,7 +76,7 @@ body {
 }
 
 .quad-1 .one {
-    background: url("img/p-1.jpg") no-repeat scroll right bottom/cover transparent; 
+    background: url("img/p-1.png") no-repeat scroll right bottom/cover transparent; 
     z-index: 550;   
 }
 
@@ -117,7 +117,7 @@ body {
 }
 
 .quad-2 .one {
-    background: url("img/p-5.jpg") no-repeat scroll left bottom/cover transparent; 
+    background: url("img/p-5.png") no-repeat scroll left bottom/cover transparent; 
     z-index: 550;   
 }
 
@@ -157,7 +157,7 @@ body {
 }
 
 .quad-3 .one {
-    background: url("img/p-9.jpg") no-repeat scroll left top/cover transparent; 
+    background: url("img/p-9.png") no-repeat scroll left top/cover transparent; 
     z-index: 550;   
 }
 
@@ -197,7 +197,7 @@ body {
 }
 
 .quad-4 .one {
-    background: url("img/p-13.jpg") no-repeat scroll right top/cover transparent; 
+    background: url("img/p-13.png") no-repeat scroll right top/cover transparent; 
     z-index: 550;   
 }
 
@@ -218,14 +218,23 @@ body {
 
 #musicVideo {
     position: fixed; 
-    top: 0px;
+    top: -5%;
     right: 0px; 
     bottom: 0px;
-    left: 0px;
-    min-width: 100%; 
-    min-height: 100%;
+    left: -5%;
+    min-width: 110%; 
+    min-height: 110%;
     width: auto; 
     height: auto; 
     z-index: 0;
     background-size: cover;
 }
+
+@media all and (max-width: 640px) {
+    .intro-text {
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+    }
+}
+

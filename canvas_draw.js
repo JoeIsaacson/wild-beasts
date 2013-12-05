@@ -1,27 +1,33 @@
 $(document).ready(function () {
      $(".quad-1, .quad-2, .quad-3, .quad-4").hide(0);
-     $('#musicVideo').hide(0);
-
+     $('#musicVideo, .screen').hide(0);
 });
 
 $(window).bind("load", function() {
-     setTimeout(function() { showPizza()}, 0);
-     setTimeout(function() { hidePizza()}, 3000);
+
+     
+     $('.screen').fadeIn(1700);
+     //setTimeout(function() { showPizza()}, 2000);
+     //setTimeout(function() { hidePizza()}, 5000);
 
 });
       
 
+     /*$('#elem').fadeTo('slow', 0.3, function() {
+         $(this).css('background-image', 'url(' + $img + ')');
+     }).delay(1000).fadeTo('slow', 1);    */  
+
 function showPizza(){
      $('#musicVideo').show(0);
      $(".quad-1, .quad-2, .quad-3, .quad-4").show();
-     $(".screen").delay(3000).hide(0);
+     $(".screen").delay(1000).hide(0);
      console.log('locked and loaded')
 
 };
 
 function hidePizza(){
 
-     var speed = 305;
+     var speed = 105;
 
      $(".quad-1 .one").hide(0);
      console.log('animation has begun!');
@@ -50,7 +56,6 @@ function hidePizza(){
      $(".quad-4 .three").delay(speed*14).hide(0);
      $(".quad-4 .four").delay(speed*15).hide(0);
 
-     $(".quad-1, .quad-2, .quad-3, .quad-4").delay(speed*16).hide(0);
-     console.log("video buttons avail")
+     $(".intro-text, .quad-1, .quad-2, .quad-3, .quad-4").delay(speed*15).fadeOut(1000);
 };
 
