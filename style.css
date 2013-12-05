@@ -1,19 +1,17 @@
 body {
-    background-color: #7659b9;
+    background-color: red;
 }
 
 .intro-text {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     height: 343px;
-    width: 300px;
-    margin-top: -171.5px;
-    margin-left: -150px;
+    width: 40%;
+    margin-top: -172.5px;
     color: #feee44;
     text-align: center;
     font-family: 'helvetica';
-    font-size: 180%;
     z-index: 3200;
 }
 
@@ -23,6 +21,7 @@ body {
     padding-top: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 10vmin;
 }
 
 .intro-text div {
@@ -37,8 +36,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #7659b9;
+    background-color: purple;
     z-index: 3000;
+    background: url('img/screen.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .quad-1,
@@ -46,6 +50,7 @@ body {
 .quad-3,
 .quad-4 {
     position: absolute;
+    display: none;
 }
 
 
@@ -71,7 +76,7 @@ body {
 }
 
 .quad-1 .one {
-    background: url("img/p-1.png") no-repeat scroll right bottom/cover transparent; 
+    background: url("img/p-1.jpg") no-repeat scroll right bottom/cover transparent; 
     z-index: 550;   
 }
 
@@ -112,7 +117,7 @@ body {
 }
 
 .quad-2 .one {
-    background: url("img/p-5.png") no-repeat scroll left bottom/cover transparent; 
+    background: url("img/p-5.jpg") no-repeat scroll left bottom/cover transparent; 
     z-index: 550;   
 }
 
@@ -152,7 +157,7 @@ body {
 }
 
 .quad-3 .one {
-    background: url("img/p-9.png") no-repeat scroll left top/cover transparent; 
+    background: url("img/p-9.jpg") no-repeat scroll left top/cover transparent; 
     z-index: 550;   
 }
 
@@ -192,7 +197,7 @@ body {
 }
 
 .quad-4 .one {
-    background: url("img/p-13.png") no-repeat scroll right top/cover transparent; 
+    background: url("img/p-13.jpg") no-repeat scroll right top/cover transparent; 
     z-index: 550;   
 }
 
@@ -212,7 +217,6 @@ body {
 }
 
 #musicVideo {
-    display: none;
     position: fixed; 
     top: 0px;
     right: 0px; 
